@@ -13,7 +13,7 @@ class UsersController extends Controller
     }
     public function show(User $user)
     {
-        $user->gravatar();
+
         return view('users.show', compact('user'));
     }
 }
